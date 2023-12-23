@@ -68,44 +68,44 @@ include CMakeFiles/projet_Lo21.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/projet_Lo21.dir/flags.make
 
-CMakeFiles/projet_Lo21.dir/main.c.obj: CMakeFiles/projet_Lo21.dir/flags.make
-CMakeFiles/projet_Lo21.dir/main.c.obj: C:/Users/evrim/CLionProjects/projet_Lo21/main.c
-CMakeFiles/projet_Lo21.dir/main.c.obj: CMakeFiles/projet_Lo21.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\evrim\CLionProjects\projet_Lo21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/projet_Lo21.dir/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/projet_Lo21.dir/main.c.obj -MF CMakeFiles\projet_Lo21.dir\main.c.obj.d -o CMakeFiles\projet_Lo21.dir\main.c.obj -c C:\Users\evrim\CLionProjects\projet_Lo21\main.c
+CMakeFiles/projet_Lo21.dir/sources/main.c.obj: CMakeFiles/projet_Lo21.dir/flags.make
+CMakeFiles/projet_Lo21.dir/sources/main.c.obj: C:/Users/evrim/CLionProjects/projet_Lo21/sources/main.c
+CMakeFiles/projet_Lo21.dir/sources/main.c.obj: CMakeFiles/projet_Lo21.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\evrim\CLionProjects\projet_Lo21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/projet_Lo21.dir/sources/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/projet_Lo21.dir/sources/main.c.obj -MF CMakeFiles\projet_Lo21.dir\sources\main.c.obj.d -o CMakeFiles\projet_Lo21.dir\sources\main.c.obj -c C:\Users\evrim\CLionProjects\projet_Lo21\sources\main.c
 
-CMakeFiles/projet_Lo21.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/projet_Lo21.dir/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\evrim\CLionProjects\projet_Lo21\main.c > CMakeFiles\projet_Lo21.dir\main.c.i
+CMakeFiles/projet_Lo21.dir/sources/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/projet_Lo21.dir/sources/main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\evrim\CLionProjects\projet_Lo21\sources\main.c > CMakeFiles\projet_Lo21.dir\sources\main.c.i
 
-CMakeFiles/projet_Lo21.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/projet_Lo21.dir/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\evrim\CLionProjects\projet_Lo21\main.c -o CMakeFiles\projet_Lo21.dir\main.c.s
+CMakeFiles/projet_Lo21.dir/sources/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/projet_Lo21.dir/sources/main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\evrim\CLionProjects\projet_Lo21\sources\main.c -o CMakeFiles\projet_Lo21.dir\sources\main.c.s
 
-CMakeFiles/projet_Lo21.dir/regles.c.obj: CMakeFiles/projet_Lo21.dir/flags.make
-CMakeFiles/projet_Lo21.dir/regles.c.obj: C:/Users/evrim/CLionProjects/projet_Lo21/regles.c
-CMakeFiles/projet_Lo21.dir/regles.c.obj: CMakeFiles/projet_Lo21.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\evrim\CLionProjects\projet_Lo21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/projet_Lo21.dir/regles.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/projet_Lo21.dir/regles.c.obj -MF CMakeFiles\projet_Lo21.dir\regles.c.obj.d -o CMakeFiles\projet_Lo21.dir\regles.c.obj -c C:\Users\evrim\CLionProjects\projet_Lo21\regles.c
+CMakeFiles/projet_Lo21.dir/sources/regles.c.obj: CMakeFiles/projet_Lo21.dir/flags.make
+CMakeFiles/projet_Lo21.dir/sources/regles.c.obj: C:/Users/evrim/CLionProjects/projet_Lo21/sources/regles.c
+CMakeFiles/projet_Lo21.dir/sources/regles.c.obj: CMakeFiles/projet_Lo21.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\evrim\CLionProjects\projet_Lo21\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/projet_Lo21.dir/sources/regles.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/projet_Lo21.dir/sources/regles.c.obj -MF CMakeFiles\projet_Lo21.dir\sources\regles.c.obj.d -o CMakeFiles\projet_Lo21.dir\sources\regles.c.obj -c C:\Users\evrim\CLionProjects\projet_Lo21\sources\regles.c
 
-CMakeFiles/projet_Lo21.dir/regles.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/projet_Lo21.dir/regles.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\evrim\CLionProjects\projet_Lo21\regles.c > CMakeFiles\projet_Lo21.dir\regles.c.i
+CMakeFiles/projet_Lo21.dir/sources/regles.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/projet_Lo21.dir/sources/regles.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\evrim\CLionProjects\projet_Lo21\sources\regles.c > CMakeFiles\projet_Lo21.dir\sources\regles.c.i
 
-CMakeFiles/projet_Lo21.dir/regles.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/projet_Lo21.dir/regles.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\evrim\CLionProjects\projet_Lo21\regles.c -o CMakeFiles\projet_Lo21.dir\regles.c.s
+CMakeFiles/projet_Lo21.dir/sources/regles.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/projet_Lo21.dir/sources/regles.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\evrim\CLionProjects\projet_Lo21\sources\regles.c -o CMakeFiles\projet_Lo21.dir\sources\regles.c.s
 
 # Object files for target projet_Lo21
 projet_Lo21_OBJECTS = \
-"CMakeFiles/projet_Lo21.dir/main.c.obj" \
-"CMakeFiles/projet_Lo21.dir/regles.c.obj"
+"CMakeFiles/projet_Lo21.dir/sources/main.c.obj" \
+"CMakeFiles/projet_Lo21.dir/sources/regles.c.obj"
 
 # External object files for target projet_Lo21
 projet_Lo21_EXTERNAL_OBJECTS =
 
-projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/main.c.obj
-projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/regles.c.obj
+projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/sources/main.c.obj
+projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/sources/regles.c.obj
 projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/build.make
 projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/linkLibs.rsp
 projet_Lo21.exe: CMakeFiles/projet_Lo21.dir/objects1.rsp

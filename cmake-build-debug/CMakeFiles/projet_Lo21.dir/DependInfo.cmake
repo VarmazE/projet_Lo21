@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/evrim/CLionProjects/projet_Lo21/main.c" "CMakeFiles/projet_Lo21.dir/main.c.obj" "gcc" "CMakeFiles/projet_Lo21.dir/main.c.obj.d"
-  "C:/Users/evrim/CLionProjects/projet_Lo21/regles.c" "CMakeFiles/projet_Lo21.dir/regles.c.obj" "gcc" "CMakeFiles/projet_Lo21.dir/regles.c.obj.d"
+  "C:/Users/evrim/CLionProjects/projet_Lo21/sources/main.c" "CMakeFiles/projet_Lo21.dir/sources/main.c.obj" "gcc" "CMakeFiles/projet_Lo21.dir/sources/main.c.obj.d"
+  "C:/Users/evrim/CLionProjects/projet_Lo21/sources/regles.c" "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj" "gcc" "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

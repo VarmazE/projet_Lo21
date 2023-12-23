@@ -1,4 +1,4 @@
-#include "regles.h"
+#include "../headers/regles.h"
 
 Regle* creer_Regle_Vide()
 {

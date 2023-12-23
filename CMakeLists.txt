@@ -3,6 +3,6 @@ project(projet_Lo21 C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(projet_Lo21 main.c
-        regles.h
-        regles.c)
+add_executable(projet_Lo21 sources/main.c
+        headers/regles.h
+        sources/regles.c)

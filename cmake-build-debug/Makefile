@@ -128,53 +128,53 @@ projet_Lo21/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/build
 .PHONY : projet_Lo21/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
+sources/main.obj: sources/main.c.obj
+.PHONY : sources/main.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/main.c.obj
-.PHONY : main.c.obj
+sources/main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/main.c.obj
+.PHONY : sources/main.c.obj
 
-main.i: main.c.i
-.PHONY : main.i
+sources/main.i: sources/main.c.i
+.PHONY : sources/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/main.c.i
-.PHONY : main.c.i
+sources/main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/main.c.i
+.PHONY : sources/main.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+sources/main.s: sources/main.c.s
+.PHONY : sources/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/main.c.s
-.PHONY : main.c.s
+sources/main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/main.c.s
+.PHONY : sources/main.c.s
 
-regles.obj: regles.c.obj
-.PHONY : regles.obj
+sources/regles.obj: sources/regles.c.obj
+.PHONY : sources/regles.obj
 
 # target to build an object file
-regles.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/regles.c.obj
-.PHONY : regles.c.obj
+sources/regles.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/regles.c.obj
+.PHONY : sources/regles.c.obj
 
-regles.i: regles.c.i
-.PHONY : regles.i
+sources/regles.i: sources/regles.c.i
+.PHONY : sources/regles.i
 
 # target to preprocess a source file
-regles.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/regles.c.i
-.PHONY : regles.c.i
+sources/regles.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/regles.c.i
+.PHONY : sources/regles.c.i
 
-regles.s: regles.c.s
-.PHONY : regles.s
+sources/regles.s: sources/regles.c.s
+.PHONY : sources/regles.s
 
 # target to generate assembly for a file
-regles.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/regles.c.s
-.PHONY : regles.c.s
+sources/regles.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/regles.c.s
+.PHONY : sources/regles.c.s
 
 # Help Target
 help:
@@ -185,12 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... projet_Lo21
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... regles.obj
-	@echo ... regles.i
-	@echo ... regles.s
+	@echo ... sources/main.obj
+	@echo ... sources/main.i
+	@echo ... sources/main.s
+	@echo ... sources/regles.obj
+	@echo ... sources/regles.i
+	@echo ... sources/regles.s
 .PHONY : help
 
 

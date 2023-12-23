@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/projet_Lo21.dir/main.c.obj"
-  "CMakeFiles/projet_Lo21.dir/main.c.obj.d"
-  "CMakeFiles/projet_Lo21.dir/regles.c.obj"
-  "CMakeFiles/projet_Lo21.dir/regles.c.obj.d"
+  "CMakeFiles/projet_Lo21.dir/sources/main.c.obj"
+  "CMakeFiles/projet_Lo21.dir/sources/main.c.obj.d"
+  "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj"
+  "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj.d"
   "libprojet_Lo21.dll.a"
   "projet_Lo21.exe"
   "projet_Lo21.exe.manifest"
