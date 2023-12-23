@@ -27,6 +27,7 @@ typedef struct BC
 Elem_BC* creer_Base_Connaissances();
 
 //------------------------------------------//
+
 /**
  * Ajoute une règle à la fin de la liste de la base de connaissances.
  *
@@ -36,4 +37,6 @@ Elem_BC* creer_Base_Connaissances();
  */
 Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle);
 
+//------------------------------------------//
 
+Regle* tete_BC(Elem_BC* liste);

@@ -99,6 +99,7 @@ Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition)
     }
 
 }
+
 //------------------------------------------//
 
 char* Reste(char* chaine)
@@ -117,6 +118,8 @@ char* Reste(char* chaine)
         return newel_chaine;
     }
 }
+
+//------------------------------------------//
 
 char* concatener(const char* chaine1, const char* chaine2)
 {
@@ -184,6 +187,8 @@ bool vide_Premisse(char* Premisse)
         return false;
     }
 }
+
+//------------------------------------------//
 
 char* tete_Premisse(const char* Premisse)
 {

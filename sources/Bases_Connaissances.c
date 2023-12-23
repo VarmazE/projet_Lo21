@@ -4,7 +4,7 @@
 
 Elem_BC* creer_Base_Connaissances()
 {
-    Elem_BC* newel= malloc(sizeof (Elem_BC*));
+    Elem_BC* newel= malloc(sizeof (Elem_BC));
     newel->regle=creer_Regle_Vide();
     newel->next=NULL;
     return newel;
@@ -32,4 +32,11 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle)
         temp->next=newel;
         return temp;
     }
+}
+
+//------------------------------------------//
+
+Regle* tete_BC(Elem_BC* liste)
+{
+    return liste->regle;
 }

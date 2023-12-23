@@ -20,7 +20,7 @@ int main()
     Elem_BC* liste_BC=creer_Base_Connaissances();
     liste_BC= Ajout_en_queue_BC(liste_BC,regle_N1);
     liste_BC= Ajout_en_queue_BC(liste_BC,regle_N2);
-    printf("%s",liste_BC->next->regle->premisse);
+    printf("%s", tete_BC(liste_BC)->premisse);
 
     //-----------------Fin------------------------//
 
