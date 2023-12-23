@@ -39,4 +39,12 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle);
 
 //------------------------------------------//
 
+/**
+ * Retourne la première règle de la base de connaissances.
+ *
+ * @param liste La liste de la base de connaissances.
+ * @return Un pointeur vers la première règle de la base de connaissances.
+ */
 Regle* tete_BC(Elem_BC* liste);
+
+
