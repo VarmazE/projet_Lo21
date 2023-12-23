@@ -5,4 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(projet_Lo21 sources/main.c
         headers/regles.h
-        sources/regles.c)
+        sources/regles.c
+        sources/Bases_Connaissances.c
+        headers/Bases_Connaissances.h)

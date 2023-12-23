@@ -128,6 +128,30 @@ projet_Lo21/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/build
 .PHONY : projet_Lo21/fast
 
+sources/Bases_Connaissances.obj: sources/Bases_Connaissances.c.obj
+.PHONY : sources/Bases_Connaissances.obj
+
+# target to build an object file
+sources/Bases_Connaissances.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.obj
+.PHONY : sources/Bases_Connaissances.c.obj
+
+sources/Bases_Connaissances.i: sources/Bases_Connaissances.c.i
+.PHONY : sources/Bases_Connaissances.i
+
+# target to preprocess a source file
+sources/Bases_Connaissances.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.i
+.PHONY : sources/Bases_Connaissances.c.i
+
+sources/Bases_Connaissances.s: sources/Bases_Connaissances.c.s
+.PHONY : sources/Bases_Connaissances.s
+
+# target to generate assembly for a file
+sources/Bases_Connaissances.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.s
+.PHONY : sources/Bases_Connaissances.c.s
+
 sources/main.obj: sources/main.c.obj
 .PHONY : sources/main.obj
 
@@ -185,6 +209,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... projet_Lo21
+	@echo ... sources/Bases_Connaissances.obj
+	@echo ... sources/Bases_Connaissances.i
+	@echo ... sources/Bases_Connaissances.s
 	@echo ... sources/main.obj
 	@echo ... sources/main.i
 	@echo ... sources/main.s
