@@ -1,0 +1,8 @@
+//
+// Created by varma on 24/12/2023.
+//
+
+#ifndef PROJET_LO21_MOTEUR_INFERENCE_H
+#define PROJET_LO21_MOTEUR_INFERENCE_H
+
+#endif //PROJET_LO21_MOTEUR_INFERENCE_H

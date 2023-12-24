@@ -9,4 +9,7 @@ add_executable(projet_Lo21 sources/main.c
         sources/Bases_Connaissances.c
         headers/Bases_Connaissances.h
         sources/Base_faits.c
-        headers/Base_faits.h)
+        headers/Base_faits.h
+        headers/Moteur_inference.h
+        headers/Moteur_inference.h
+        sources/Moteur_inference.c)

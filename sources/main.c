@@ -31,7 +31,7 @@ int main()
     Elem_BF* liste_BF=Creer_BF_Vide();
     liste_BF= Ajout_en_queue_BF(liste_BF,"A");
     liste_BF= Ajout_en_queue_BF(liste_BF,"B");
-    liste_BF= Ajout_en_queue_BF(liste_BF,"C");
+
     //-----------------Fin------------------------//
 
 
