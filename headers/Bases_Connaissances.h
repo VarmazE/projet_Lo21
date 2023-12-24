@@ -1,12 +1,15 @@
 
 #ifndef PROJET_LO21_BASES_CONNAISSANCES_H
 #define PROJET_LO21_BASES_CONNAISSANCES_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "regles.h"
+#include "../headers/regles.h"
+
 #endif //PROJET_LO21_BASES_CONNAISSANCES_H
+
 /*
  * Définition d'une Base de connaissances:
 */
@@ -39,4 +42,12 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle);
 
 //------------------------------------------//
 
+/**
+ * Retourne la première règle de la base de connaissances.
+ *
+ * @param liste La liste de la base de connaissances.
+ * @return Un pointeur vers la première règle de la base de connaissances.
+ */
 Regle* tete_BC(Elem_BC* liste);
+
+

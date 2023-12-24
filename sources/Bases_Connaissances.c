@@ -1,6 +1,5 @@
 #include "../headers/Bases_Connaissances.h"
 
-//------------------------------------------//
 
 Elem_BC* creer_Base_Connaissances()
 {
@@ -18,7 +17,7 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle)
     newel->regle = regle;
     newel->next = NULL;
 
-    if (liste == NULL)
+    if (Regle_Vide(liste->regle))
     {
         return newel;
     }
@@ -30,7 +29,7 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle)
             temp=temp->next;
         }
         temp->next=newel;
-        return temp;
+        return liste;
     }
 }
 

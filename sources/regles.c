@@ -1,5 +1,6 @@
 #include "../headers/regles.h"
 
+
 Regle* creer_Regle_Vide()
 {
 
@@ -8,6 +9,20 @@ Regle* creer_Regle_Vide()
     newel_r->conclusion="";
     newel_r->next=NULL;
     return newel_r;
+}
+
+//------------------------------------------//
+
+bool Regle_Vide(Regle* regle)
+{
+    if (strlen(regle->premisse)==0 && strlen(regle->conclusion)==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
 
 //------------------------------------------//

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/projet_Lo21.dir/sources/Base_faits.c.obj"
+  "CMakeFiles/projet_Lo21.dir/sources/Base_faits.c.obj.d"
   "CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.obj"
   "CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.obj.d"
   "CMakeFiles/projet_Lo21.dir/sources/main.c.obj"

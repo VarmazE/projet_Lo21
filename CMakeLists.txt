@@ -7,4 +7,6 @@ add_executable(projet_Lo21 sources/main.c
         headers/regles.h
         sources/regles.c
         sources/Bases_Connaissances.c
-        headers/Bases_Connaissances.h)
+        headers/Bases_Connaissances.h
+        sources/Base_faits.c
+        headers/Base_faits.h)

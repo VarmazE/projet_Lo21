@@ -1,11 +1,14 @@
 #ifndef PROJET_LO21_REGLES_H
 #define PROJET_LO21_REGLES_H
 
-#endif //PROJET_LO21_REGLES_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+
+#endif //PROJET_LO21_REGLES_H
+
+
 /*
  * Définition d'une Règle:
 */
@@ -82,12 +85,15 @@ bool vide_Premisse(char* Premisse);
 
 //------------------------------------------//
 
+/**
+ * Retourne le premier caractère de la prémisse.
+ *
+ * @param Premisse La prémisse à traiter.
+ * @return Une nouvelle chaîne contenant le premier caractère de la prémisse, ou NULL si la prémisse est vide.
+ */
 char* tete_Premisse(const char* Premisse);
 
-
-
 //------------------------------------------//
-//--------------Utilitaire---------------------//
 
 /**
  * Retourne une nouvelle chaîne sans son dernier caractère.
@@ -107,3 +113,13 @@ char* Reste(char* chaine);
  * @return Une nouvelle chaîne résultante de la concaténation de chaine1 et chaine2.
  */
 char* concatener(const char* chaine1, const char* chaine2);
+
+//------------------------------------------//
+
+/**
+ * Vérifie si une règle est vide.
+ *
+ * @param regle La règle à vérifier.
+ * @return true si la règle est vide, sinon false.
+ */
+bool Regle_Vide(Regle* regle);
