@@ -4,7 +4,7 @@
 Regle* creer_Regle_Vide()
 {
 
-    Regle* newel_r= malloc(sizeof (Regle*));
+    Regle* newel_r= malloc(sizeof (Regle));
     newel_r->premisse="";
     newel_r->conclusion="";
     newel_r->next=NULL;
@@ -27,32 +27,49 @@ bool Regle_Vide(Regle* regle)
 
 //------------------------------------------//
 
-bool Appartence_premisse(char* Premisse,char proposition)
+bool Appartenance_premisse(Regle* regle, char* proposition)
 {
-    if (strlen(Premisse) == 0)
-    {
-        return false;
-    }
-    else
+
+    if (regle->next == NULL)
     {
 
-        if (Appartence_premisse(Reste(Premisse),proposition))
+
+        if (strcmp(regle->premisse, proposition) == 0)
         {
+
             return true;
         }
         else
         {
 
-            if (Premisse[strlen(Premisse)-1]==proposition)
+            return false;
+        }
+    }
+    else
+    {
+
+        if (Appartenance_premisse(Reste(regle), proposition) == true)
+        {
+            return true;
+        }
+        else
+        {
+            Regle* temp = regle;
+            while (temp->next != NULL)
+            {
+                temp = temp->next;
+            }
+
+            if (strcmp(temp->premisse, proposition) == 0)
             {
                 return true;
             }
             else
             {
-                return false;
+
+                return false; // Correction ici
             }
         }
-
     }
 }
 
@@ -60,37 +77,25 @@ bool Appartence_premisse(char* Premisse,char proposition)
 
 Regle* Ajout_propostion_regle(Regle* regle,char* proposition)
 {
-    Regle *newel_r = malloc(sizeof(Regle *));
-    newel_r->next = regle->next;
-    newel_r->conclusion = regle->conclusion;
-    newel_r->premisse=regle->premisse;
-    if (Appartence_premisse(regle->premisse,proposition[0])==false) {
+    Regle* newel_r = creer_Regle_Vide();
+    newel_r->premisse=proposition;
+    newel_r->conclusion=regle->conclusion;
 
-
-
-
-        // Allocation de mémoire pour newel_premises
-        char *newel_premisse = malloc(sizeof(strlen(regle->premisse) + strlen(proposition) + 1));
-
-        // Copier la prémisse vers newel_premisse
-        strcpy(newel_premisse, regle->premisse);
-
-        // Concaténer la proposition à la fin de newel_premisse
-        strcat(newel_premisse, proposition);
-
-        //Faire correspondre la mémoire de la règle à la nouvelle prémisse
-        newel_r->premisse = malloc(sizeof(strlen(regle->premisse) + strlen(proposition) + 1));
-
-        strcpy(newel_r->premisse, newel_premisse);
-        free(newel_premisse);
-
+    if (strlen(regle->premisse) == 0)
+    {
         return newel_r;
     }
     else
     {
-        printf("Impossible la propostion est déjà présent dans la prémisse\n");
-        return newel_r;
+        Regle* temp = regle;
+        while (temp->next != NULL)
+        {
+            temp = temp->next;
+        }
+        temp->next = newel_r;
+        return regle;
     }
+
 
 }
 
@@ -117,21 +122,35 @@ Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition)
 
 //------------------------------------------//
 
-char* Reste(char* chaine)
+Regle* Reste(Regle* regle)
 {
-    if (chaine == NULL)
+    Regle* newel_r = creer_Regle_Vide();
+    if (regle->next==NULL)
     {
-        perror("Allocation de mémoire échouée");
-        exit(1);
+        return newel_r;
     }
     else
     {
-        char *newel_chaine= malloc(strlen(chaine) );
-        strcpy(newel_chaine, chaine);
-        newel_chaine[strlen(newel_chaine) - 1] = '\0';
+        Regle* temp=regle;
+        while (temp->next!=NULL)
+        {
+            newel_r=Ajout_propostion_regle(newel_r,temp->premisse);
+            temp=temp->next;
+        }
+        return newel_r;
 
-        return newel_chaine;
     }
+}
+
+//------------------------------------------//
+
+void afficherListe(Regle* regle) {
+    Regle* courant = regle;
+    while (courant != NULL) {
+        printf("%s -> ", courant->premisse);
+        courant = courant->next;
+    }
+    printf("NULL\n");
 }
 
 //------------------------------------------//
@@ -158,33 +177,33 @@ char* concatener(const char* chaine1, const char* chaine2)
 
 //------------------------------------------//
 
-char* Supprimer_Premisse(char* Premssie,char proposition)
+char* Supprimer_Premisse(char* Premisse,char proposition)
 {
-    if (strlen(Premssie)==1)
+    if (strlen(Premisse)==1)
     {
-        if (Premssie[0] == proposition)
+        if (Premisse[0] == proposition)
         {
             char* newel_premisse= "";
             return newel_premisse;
         }
         else
         {
-            return Premssie;
+            return Premisse;
 
         }
     }
     else
     {
-        if (Premssie[strlen(Premssie)-1] != proposition)
+        if (Premisse[strlen(Premisse)-1] != proposition)
         {
             char queue[1];
-            sprintf(queue, "%c", Premssie[strlen(Premssie)-1]);
+            sprintf(queue, "%c", Premisse[strlen(Premisse)-1]);
 
-            return concatener(Supprimer_Premisse(Reste(Premssie),proposition),queue);
+            return concatener(Supprimer_Premisse(Reste(Premisse),proposition),queue);
         }
         else
         {
-            return Reste(Premssie);
+            return Reste(Premisse);
         }
     }
 }
@@ -214,4 +233,8 @@ char* tete_Premisse(const char* Premisse)
     tete[0] = Premisse[0];
     tete[1] = '\0';
     return tete;
+}
+char* Valeur_queue(Regle* regle)
+{
+
 }

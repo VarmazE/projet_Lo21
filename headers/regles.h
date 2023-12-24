@@ -20,7 +20,7 @@ typedef struct Regle
     struct Regle* next; // Pointeur vers la règle suivante dans la liste
 }Regle;
 
-typedef Regle* liste_BC; //liste_Base_de_Connaissancesdevient un pointeur vers un element
+
 
 /**
  * Crée une nouvelle règle vide.
@@ -60,7 +60,7 @@ Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition);
  * @param proposition La proposition à rechercher dans la prémisse.
  * @return true si la proposition appartient à la prémisse, sinon false.
  */
-bool Appartence_premisse(char* Premisse,char proposition);
+bool Appartenance_premisse(Regle* regle, char* proposition);
 
 //------------------------------------------//
 
@@ -92,17 +92,18 @@ bool vide_Premisse(char* Premisse);
  * @return Une nouvelle chaîne contenant le premier caractère de la prémisse, ou NULL si la prémisse est vide.
  */
 char* tete_Premisse(const char* Premisse);
-
+void p_c(Regle *regle);
 //------------------------------------------//
 
 /**
  * Retourne une nouvelle chaîne sans son dernier caractère.
  *
  * @param chaine La chaîne d'origine.
- * @return Une nouvelle chaîne sans le dernier caractère de la chaîne d'origine.
+ * @return Une nouvelle chaîne sans le dernier caractère de la chaîne d'origine. dededededededededed:edepfkepfrepghrseg
  */
-char* Reste(char* chaine);
+Regle* Reste(Regle* regle);
 
+void afficherListe(Regle* regle);
 //------------------------------------------//
 
 /**
