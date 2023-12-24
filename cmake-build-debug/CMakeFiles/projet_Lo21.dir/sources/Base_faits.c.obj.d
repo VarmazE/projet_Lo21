@@ -1,5 +1,5 @@
-CMakeFiles/projet_Lo21.dir/sources/main.c.obj: \
- C:\Users\evrim\CLionProjects\projet_Lo21\sources\main.c \
+CMakeFiles/projet_Lo21.dir/sources/Base_faits.c.obj: \
+ C:\Users\evrim\CLionProjects\projet_Lo21\sources\Base_faits.c \
  C:/Users/evrim/CLionProjects/projet_Lo21/headers/Base_faits.h \
  C:/Users/evrim/CLionProjects/projet_Lo21/headers/Bases_Connaissances.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
