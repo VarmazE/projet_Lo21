@@ -86,24 +86,32 @@ bool vide_Premisse(char* Premisse);
 //------------------------------------------//
 
 /**
- * Retourne le premier caractère de la prémisse.
+ * Retourne la première prémisse d'une règle.
  *
- * @param Premisse La prémisse à traiter.
- * @return Une nouvelle chaîne contenant le premier caractère de la prémisse, ou NULL si la prémisse est vide.
+ * @param regle La règle d'origine.
+ * @return Une nouvelle chaîne contenant la première prémisse de la règle.
  */
-char* tete_Premisse(const char* Premisse);
-void p_c(Regle *regle);
+char* tete_Premisse(Regle* regle);
+
 //------------------------------------------//
 
 /**
- * Retourne une nouvelle chaîne sans son dernier caractère.
+ * Retourne le reste d'une règle, excluant la dernière prémisse.
  *
- * @param chaine La chaîne d'origine.
- * @return Une nouvelle chaîne sans le dernier caractère de la chaîne d'origine. dededededededededed:edepfkepfrepghrseg
+ * @param regle La règle d'origine.
+ * @return Une nouvelle règle représentant le reste de la règle d'origine sans la dernière prémisse.
  */
 Regle* Reste(Regle* regle);
 
+//------------------------------------------//
+
+/**
+ * Affiche les prémisse successives d'une règle.
+ *
+ * @param regle La règle à afficher.
+ */
 void afficherListe(Regle* regle);
+
 //------------------------------------------//
 
 /**
@@ -124,3 +132,15 @@ char* concatener(const char* chaine1, const char* chaine2);
  * @return true si la règle est vide, sinon false.
  */
 bool Regle_Vide(Regle* regle);
+
+//------------------------------------------//
+
+/**
+ * Supprime une proposition de la prémisse d'une règle.
+ *
+ * @param regle La règle d'origine.
+ * @param proposition La proposition à supprimer de la prémisse.
+ * @return Une nouvelle règle résultante après la suppression de la proposition.
+ */
+Regle* Supprmier_proposition(Regle* regle, char* proposition);
+

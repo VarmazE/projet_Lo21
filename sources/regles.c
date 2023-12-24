@@ -177,39 +177,6 @@ char* concatener(const char* chaine1, const char* chaine2)
 
 //------------------------------------------//
 
-char* Supprimer_Premisse(char* Premisse,char proposition)
-{
-    if (strlen(Premisse)==1)
-    {
-        if (Premisse[0] == proposition)
-        {
-            char* newel_premisse= "";
-            return newel_premisse;
-        }
-        else
-        {
-            return Premisse;
-
-        }
-    }
-    else
-    {
-        if (Premisse[strlen(Premisse)-1] != proposition)
-        {
-            char queue[1];
-            sprintf(queue, "%c", Premisse[strlen(Premisse)-1]);
-
-            return concatener(Supprimer_Premisse(Reste(Premisse),proposition),queue);
-        }
-        else
-        {
-            return Reste(Premisse);
-        }
-    }
-}
-
-//------------------------------------------//
-
 bool vide_Premisse(char* Premisse)
 {
     if (strlen(Premisse)==0)
@@ -224,17 +191,33 @@ bool vide_Premisse(char* Premisse)
 
 //------------------------------------------//
 
-char* tete_Premisse(const char* Premisse)
+char* tete_Premisse(Regle* regle)
 {
-    if (Premisse == NULL || Premisse[0] == '\0') {
-        return NULL;
-    }
-    char* tete = malloc(2);
-    tete[0] = Premisse[0];
-    tete[1] = '\0';
-    return tete;
+    return regle->premisse;
 }
-char* Valeur_queue(Regle* regle)
-{
 
+//------------------------------------------//
+
+Regle* Supprmier_proposition(Regle* regle,char* proposition)
+{
+    Regle* newel_r = creer_Regle_Vide();
+    if (regle->next==NULL)
+    {
+        free(regle);
+        regle=NULL;
+        return regle;
+    }
+    else
+    {
+        Regle* temp=regle;
+        while (temp != NULL)
+        {
+            if (strcmp(temp->premisse,proposition) != 0)
+            {
+                newel_r= Ajout_propostion_regle(newel_r,temp->premisse);
+            }
+            temp=temp->next;
+        }
+        return newel_r;
+    }
 }
