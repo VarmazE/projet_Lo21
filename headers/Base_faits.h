@@ -34,9 +34,11 @@ Elem_BF* Ajout_en_queue_BF(Elem_BF* liste, char* proposition);
  */
 Elem_BF* Creer_BF_Vide();
 
+//------------------------------------------//
 
-
-
-
-
-
+/**
+ * Affiche les propositions de la liste des faits de la base de faits.
+ *
+ * @param liste_BF La liste des faits de la base de faits.
+ */
+void afficherListe_BF(Elem_BF* liste_BF);

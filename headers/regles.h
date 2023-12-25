@@ -144,3 +144,11 @@ bool Regle_Vide(Regle* regle);
  */
 Regle* Supprmier_proposition(Regle* regle, char* proposition);
 
+//------------------------------------------//
+/**
+ * Retourne la longueur de la prémisse d'une règle.
+ *
+ * @param regle La règle d'origine.
+ * @return La longueur de la prémisse de la règle.
+ */
+int longueur_Premisse(Regle* regle);

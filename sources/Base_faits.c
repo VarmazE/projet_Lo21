@@ -31,3 +31,15 @@ Elem_BF* Creer_BF_Vide()
     newel_p->next = NULL;
     return newel_p;
 }
+
+//------------------------------------------//
+
+void afficherListe_BF(Elem_BF* liste_BF)
+{
+    Elem_BF* courant = liste_BF;
+    while (courant != NULL) {
+        printf("%s -> ", courant->proposition);
+        courant = courant->next;
+    }
+    printf("NULL\n");
+}

@@ -176,6 +176,30 @@ sources/Bases_Connaissances.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Bases_Connaissances.c.s
 .PHONY : sources/Bases_Connaissances.c.s
 
+sources/Moteur_inference.obj: sources/Moteur_inference.c.obj
+.PHONY : sources/Moteur_inference.obj
+
+# target to build an object file
+sources/Moteur_inference.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Moteur_inference.c.obj
+.PHONY : sources/Moteur_inference.c.obj
+
+sources/Moteur_inference.i: sources/Moteur_inference.c.i
+.PHONY : sources/Moteur_inference.i
+
+# target to preprocess a source file
+sources/Moteur_inference.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Moteur_inference.c.i
+.PHONY : sources/Moteur_inference.c.i
+
+sources/Moteur_inference.s: sources/Moteur_inference.c.s
+.PHONY : sources/Moteur_inference.s
+
+# target to generate assembly for a file
+sources/Moteur_inference.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/Moteur_inference.c.s
+.PHONY : sources/Moteur_inference.c.s
+
 sources/main.obj: sources/main.c.obj
 .PHONY : sources/main.obj
 
@@ -239,6 +263,9 @@ help:
 	@echo ... sources/Bases_Connaissances.obj
 	@echo ... sources/Bases_Connaissances.i
 	@echo ... sources/Bases_Connaissances.s
+	@echo ... sources/Moteur_inference.obj
+	@echo ... sources/Moteur_inference.i
+	@echo ... sources/Moteur_inference.s
 	@echo ... sources/main.obj
 	@echo ... sources/main.i
 	@echo ... sources/main.s

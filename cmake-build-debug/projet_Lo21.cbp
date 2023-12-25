@@ -82,6 +82,9 @@
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/headers/Bases_Connaissances.h">
 			<Option target="projet_Lo21"/>
 		</Unit>
+		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/headers/Moteur_inference.h">
+			<Option target="projet_Lo21"/>
+		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/headers/regles.h">
 			<Option target="projet_Lo21"/>
 		</Unit>
@@ -89,6 +92,9 @@
 			<Option target="projet_Lo21"/>
 		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/sources/Bases_Connaissances.c">
+			<Option target="projet_Lo21"/>
+		</Unit>
+		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/sources/Moteur_inference.c">
 			<Option target="projet_Lo21"/>
 		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Lo21/sources/main.c">

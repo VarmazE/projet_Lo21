@@ -221,3 +221,17 @@ Regle* Supprmier_proposition(Regle* regle,char* proposition)
         return newel_r;
     }
 }
+
+//------------------------------------------//
+
+int longueur_Premisse(Regle* regle)
+{
+    Regle* temp=regle;
+    int longuer=0;
+    while (temp!=NULL)
+    {
+        temp=temp->next;
+        longuer++;
+    }
+    return longuer;
+}
