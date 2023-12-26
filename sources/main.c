@@ -8,18 +8,18 @@ int main()
 
     Regle* regle_N1=creer_Regle_Vide();
     regle_N1 = Ajout_propostion_regle(regle_N1,"A");
-    regle_N1= Creer_Conclusion_Regle(regle_N1,"D");
+    regle_N1= Creer_Conclusion_Regle(regle_N1,"C");
     afficher_Liste_Regle(regle_N1);
 
     Regle* regle_N2 = creer_Regle_Vide();
-    regle_N2 = Ajout_propostion_regle(regle_N2,"F");
-    regle_N2 = Creer_Conclusion_Regle(regle_N2,"C");
+    regle_N2 = Ajout_propostion_regle(regle_N2,"A");
+    regle_N2 = Ajout_propostion_regle(regle_N2,"B");
+    regle_N2 = Creer_Conclusion_Regle(regle_N2,"D");
     afficher_Liste_Regle(regle_N2);
 
     Regle* regle_N3 = creer_Regle_Vide();
-    regle_N3 = Ajout_propostion_regle(regle_N3,"A");
-    regle_N3 = Ajout_propostion_regle(regle_N3,"G");
-    regle_N3= Creer_Conclusion_Regle(regle_N3,"F");
+    regle_N3 = Ajout_propostion_regle(regle_N3,"C");
+    regle_N3= Creer_Conclusion_Regle(regle_N3,"B");
     afficher_Liste_Regle(regle_N3);
 
     Regle* regle_N4 = creer_Regle_Vide();
@@ -39,7 +39,6 @@ int main()
     liste_BC= Ajout_en_queue_BC(liste_BC,regle_N1);
     liste_BC= Ajout_en_queue_BC(liste_BC,regle_N2);
     liste_BC= Ajout_en_queue_BC(liste_BC,regle_N3);
-    liste_BC= Ajout_en_queue_BC(liste_BC,regle_N4);
 
 
     //-----------------Fin------------------------//

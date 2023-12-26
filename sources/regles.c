@@ -77,22 +77,30 @@ bool Appartenance_premisse(Regle* regle, char* proposition)
 
 Regle* Ajout_propostion_regle(Regle* regle,char* proposition)
 {
-    Regle* newel_r = creer_Regle_Vide();
-    newel_r->premisse=proposition;
-    newel_r->conclusion=regle->conclusion;
-
-    if (strlen(regle->premisse) == 0)
+    if (Appartenance_premisse(regle,proposition) == false)
     {
-        return newel_r;
+        Regle* newel_r = creer_Regle_Vide();
+        newel_r->premisse=proposition;
+        newel_r->conclusion=regle->conclusion;
+
+        if (strlen(regle->premisse) == 0)
+        {
+            return newel_r;
+        }
+        else
+        {
+            Regle* temp = regle;
+            while (temp->next != NULL)
+            {
+                temp = temp->next;
+            }
+            temp->next = newel_r;
+            return regle;
+        }
+
     }
     else
     {
-        Regle* temp = regle;
-        while (temp->next != NULL)
-        {
-            temp = temp->next;
-        }
-        temp->next = newel_r;
         return regle;
     }
 

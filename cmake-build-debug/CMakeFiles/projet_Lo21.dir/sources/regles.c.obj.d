@@ -1,6 +1,6 @@
 CMakeFiles/projet_Lo21.dir/sources/regles.c.obj: \
- C:\Users\evrim\CLionProjects\projet_Lo21\sources\regles.c \
- C:/Users/evrim/CLionProjects/projet_Lo21/headers/regles.h \
+ C:\Users\evrim\CLionProjects\projet_Loo21\sources\regles.c \
+ C:/Users/evrim/CLionProjects/projet_Loo21/headers/regles.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \

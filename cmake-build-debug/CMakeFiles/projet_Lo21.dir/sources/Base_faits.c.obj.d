@@ -1,7 +1,7 @@
 CMakeFiles/projet_Lo21.dir/sources/Base_faits.c.obj: \
- C:\Users\evrim\CLionProjects\projet_Lo21\sources\Base_faits.c \
- C:/Users/evrim/CLionProjects/projet_Lo21/headers/Base_faits.h \
- C:/Users/evrim/CLionProjects/projet_Lo21/headers/Bases_Connaissances.h \
+ C:\Users\evrim\CLionProjects\projet_Loo21\sources\Base_faits.c \
+ C:/Users/evrim/CLionProjects/projet_Loo21/headers/Base_faits.h \
+ C:/Users/evrim/CLionProjects/projet_Loo21/headers/Bases_Connaissances.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
@@ -26,4 +26,4 @@ CMakeFiles/projet_Lo21.dir/sources/Base_faits.c.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:/Program\ Files/JetBrains/CLion\ 2023.3.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdbool.h \
- C:/Users/evrim/CLionProjects/projet_Lo21/headers/regles.h
+ C:/Users/evrim/CLionProjects/projet_Loo21/headers/regles.h
