@@ -101,7 +101,7 @@ Regle* Ajout_propostion_regle(Regle* regle,char* proposition)
 
 //------------------------------------------//
 
-Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition)
+Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition) //changer conclusion
 {
     if (strcmp(regle->premisse, "") == 0)
     {
