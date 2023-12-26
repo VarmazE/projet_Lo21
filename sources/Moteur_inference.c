@@ -4,7 +4,7 @@
 
 #include "../headers/Moteur_inference.h"
 
-Elem_BF* Moteur_inference(Elem_BF* liste_BF, Elem_BC* liste_BC)
+Elem_BF* Moteur_inference_I(Elem_BF* liste_BF, Elem_BC* liste_BC)
 {
     Elem_BC* actuel_BC = liste_BC;
 
@@ -37,3 +37,20 @@ Elem_BF* Moteur_inference(Elem_BF* liste_BF, Elem_BC* liste_BC)
 
     return liste_BF;
 }
+
+//------------------------------------------//
+
+
+Elem_BF* Moteur_inference_P(Elem_BF* liste_BF,Elem_BC* liste_BC)
+{
+    bool comparaison = false;
+    while (comparaison == false)
+    {
+        Elem_BF* temp = copierListe_BF(liste_BF);
+        liste_BF = Moteur_inference_I(liste_BF,liste_BC);
+        comparaison = Comparaison_BF(temp,liste_BF);
+    }
+    return liste_BF;
+}
+
+//------------------------------------------//

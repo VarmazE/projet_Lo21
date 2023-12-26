@@ -65,17 +65,6 @@ bool Appartenance_premisse(Regle* regle, char* proposition);
 //------------------------------------------//
 
 /**
- * Supprime la première occurrence d'une proposition dans la prémisse.
- *
- * @param Premisse La prémisse à modifier.
- * @param proposition La proposition à supprimer de la prémisse.
- * @return Une nouvelle prémisse avec la première occurrence de la proposition supprimée.
- */
-char* Supprimer_Premisse(char* Premisse, char proposition);
-
-//------------------------------------------//
-
-/**
  * Vérifie si la prémisse est vide.
  *
  * @param Premisse La prémisse à vérifier.
@@ -110,18 +99,7 @@ Regle* Reste(Regle* regle);
  *
  * @param regle La règle à afficher.
  */
-void afficherListe(Regle* regle);
-
-//------------------------------------------//
-
-/**
- * Concatène deux chaînes de caractères.
- *
- * @param chaine1 La première chaîne.
- * @param chaine2 La deuxième chaîne.
- * @return Une nouvelle chaîne résultante de la concaténation de chaine1 et chaine2.
- */
-char* concatener(const char* chaine1, const char* chaine2);
+void afficher_Liste_Regle(Regle* regle);
 
 //------------------------------------------//
 
@@ -145,6 +123,7 @@ bool Regle_Vide(Regle* regle);
 Regle* Supprmier_proposition(Regle* regle, char* proposition);
 
 //------------------------------------------//
+
 /**
  * Retourne la longueur de la prémisse d'une règle.
  *

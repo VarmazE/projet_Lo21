@@ -67,7 +67,7 @@ bool Appartenance_premisse(Regle* regle, char* proposition)
             else
             {
 
-                return false; // Correction ici
+                return false;
             }
         }
     }
@@ -110,12 +110,8 @@ Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition)
     }
     else
     {
-        Regle* newel_r= malloc(sizeof (Regle*));
-        newel_r->premisse=regle->premisse;
-        newel_r->next=regle->next;
-        newel_r->conclusion= malloc(sizeof (strlen(proposition)+1));
-        strcpy(newel_r->conclusion,proposition);
-        return newel_r;
+        regle->conclusion = proposition;
+        return regle;
     }
 
 }
@@ -144,35 +140,13 @@ Regle* Reste(Regle* regle)
 
 //------------------------------------------//
 
-void afficherListe(Regle* regle) {
+void afficher_Liste_Regle(Regle* regle) {
     Regle* courant = regle;
     while (courant != NULL) {
         printf("%s -> ", courant->premisse);
         courant = courant->next;
     }
-    printf("NULL\n");
-}
-
-//------------------------------------------//
-
-char* concatener(const char* chaine1, const char* chaine2)
-{
-    // Allouer suffisamment d'espace pour contenir les deux chaînes plus le caractère nul
-    char* resultat = malloc(strlen(chaine1) + strlen(chaine2) + 1);
-
-    // Vérifier si l'allocation de mémoire a réussi
-    if (resultat == NULL) {
-        fprintf(stderr, "Erreur d'allocation de mémoire\n");
-        exit(EXIT_FAILURE);
-    }
-
-    // Copier la première chaîne dans le résultat
-    strcpy(resultat, chaine1);
-
-    // Concaténer la deuxième chaîne au résultat
-    strcat(resultat, chaine2);
-
-    return resultat;
+    printf("|| %s || \n",regle->conclusion);
 }
 
 //------------------------------------------//
@@ -200,26 +174,34 @@ char* tete_Premisse(Regle* regle)
 
 Regle* Supprmier_proposition(Regle* regle,char* proposition)
 {
-    Regle* newel_r = creer_Regle_Vide();
-    if (regle->next==NULL)
+    if (Appartenance_premisse(regle,proposition))
     {
-        free(regle);
-        regle=NULL;
-        return regle;
+        Regle* newel_r = creer_Regle_Vide();
+        if (regle->next==NULL)
+        {
+            free(regle);
+            regle=NULL;
+            return regle;
+        }
+        else
+        {
+            Regle* temp=regle;
+            while (temp != NULL)
+            {
+                if (strcmp(temp->premisse,proposition) != 0)
+                {
+                    newel_r= Ajout_propostion_regle(newel_r,temp->premisse);
+                }
+                temp=temp->next;
+            }
+            return newel_r;
+        }
     }
     else
     {
-        Regle* temp=regle;
-        while (temp != NULL)
-        {
-            if (strcmp(temp->premisse,proposition) != 0)
-            {
-                newel_r= Ajout_propostion_regle(newel_r,temp->premisse);
-            }
-            temp=temp->next;
-        }
-        return newel_r;
+        return regle;
     }
+
 }
 
 //------------------------------------------//
