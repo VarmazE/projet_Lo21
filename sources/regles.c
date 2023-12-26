@@ -201,7 +201,7 @@ char* tete_Premisse(Regle* regle)
 Regle* Supprmier_proposition(Regle* regle,char* proposition)
 {
     Regle* newel_r = creer_Regle_Vide();
-    if (regle->next==NULL) // and regle.propostion == propostion
+    if (regle->next==NULL) // tuiliser la fonction appartenir 
     {
         free(regle);
         regle=NULL;
