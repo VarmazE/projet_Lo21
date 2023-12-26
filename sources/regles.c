@@ -201,7 +201,7 @@ char* tete_Premisse(Regle* regle)
 Regle* Supprmier_proposition(Regle* regle,char* proposition)
 {
     Regle* newel_r = creer_Regle_Vide();
-    if (regle->next==NULL)
+    if (regle->next==NULL) // and regle.propostion == propostion
     {
         free(regle);
         regle=NULL;
