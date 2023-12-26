@@ -113,7 +113,7 @@ Regle* Creer_Conclusion_Regle(Regle* regle,char* proposition)
         Regle* newel_r= malloc(sizeof (Regle*));
         newel_r->premisse=regle->premisse;
         newel_r->next=regle->next;
-        newel_r->conclusion= malloc(sizeof (strlen(proposition)+1));
+        newel_r->conclusion= malloc(sizeof (strlen(proposition)+1)); // changer la fonction
         strcpy(newel_r->conclusion,proposition);
         return newel_r;
     }
