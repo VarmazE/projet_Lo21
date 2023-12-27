@@ -38,7 +38,7 @@ Regle* creer_Regle_Vide();
  * @param proposition La proposition à ajouter à la prémisse.
  * @return Un pointeur vers une nouvelle règle avec la prémisse mise à jour.
  */
-Regle* Ajout_propostion_regle(Regle* regle,char* proposition);
+Regle* Ajout_proposition_regle(Regle* regle,char* proposition);
 
 //------------------------------------------//
 

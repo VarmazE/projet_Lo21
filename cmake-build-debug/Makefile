@@ -224,6 +224,30 @@ sources/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/main.c.s
 .PHONY : sources/main.c.s
 
+sources/menu.obj: sources/menu.c.obj
+.PHONY : sources/menu.obj
+
+# target to build an object file
+sources/menu.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/menu.c.obj
+.PHONY : sources/menu.c.obj
+
+sources/menu.i: sources/menu.c.i
+.PHONY : sources/menu.i
+
+# target to preprocess a source file
+sources/menu.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/menu.c.i
+.PHONY : sources/menu.c.i
+
+sources/menu.s: sources/menu.c.s
+.PHONY : sources/menu.s
+
+# target to generate assembly for a file
+sources/menu.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\projet_Lo21.dir\build.make CMakeFiles/projet_Lo21.dir/sources/menu.c.s
+.PHONY : sources/menu.c.s
+
 sources/regles.obj: sources/regles.c.obj
 .PHONY : sources/regles.obj
 
@@ -269,6 +293,9 @@ help:
 	@echo ... sources/main.obj
 	@echo ... sources/main.i
 	@echo ... sources/main.s
+	@echo ... sources/menu.obj
+	@echo ... sources/menu.i
+	@echo ... sources/menu.s
 	@echo ... sources/regles.obj
 	@echo ... sources/regles.i
 	@echo ... sources/regles.s

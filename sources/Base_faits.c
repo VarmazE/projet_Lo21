@@ -42,15 +42,29 @@ Elem_BF* Ajout_en_queue_BF(Elem_BF* liste, char* proposition)
 
 //------------------------------------------//
 
-void afficherListe_BF(Elem_BF* liste_BF)
-{
+void afficherListe_BF(Elem_BF* liste_BF) {
     Elem_BF* courant = liste_BF;
+
+    printf("\n");
+
+    printf("\n=======================================\n");
+    printf("  Affichage de la liste de faits\n");
+    printf("=======================================\n");
+
     while (courant != NULL) {
         printf("%s -> ", courant->proposition);
         courant = courant->next;
     }
+
     printf("NULL\n");
+
+    printf("=======================================\n");
+    printf("  Fin de la liste de faits\n");
+    printf("=======================================\n");
+    printf("\n");
+    printf("\n");
 }
+
 
 //------------------------------------------//
 

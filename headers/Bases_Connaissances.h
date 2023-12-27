@@ -50,4 +50,6 @@ Elem_BC* Ajout_en_queue_BC(Elem_BC* liste, Regle* regle);
  */
 Regle* tete_BC(Elem_BC* liste);
 
+//------------------------------------------//
 
+void afficherListe_BC(Elem_BC* liste_BF);

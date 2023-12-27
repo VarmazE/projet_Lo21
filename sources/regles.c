@@ -75,7 +75,7 @@ bool Appartenance_premisse(Regle* regle, char* proposition)
 
 //------------------------------------------//
 
-Regle* Ajout_propostion_regle(Regle* regle,char* proposition)
+Regle* Ajout_proposition_regle(Regle* regle,char* proposition)
 {
     if (Appartenance_premisse(regle,proposition) == false)
     {
@@ -138,7 +138,7 @@ Regle* Reste(Regle* regle)
         Regle* temp=regle;
         while (temp->next!=NULL)
         {
-            newel_r=Ajout_propostion_regle(newel_r,temp->premisse);
+            newel_r=Ajout_proposition_regle(newel_r,temp->premisse);
             temp=temp->next;
         }
         return newel_r;
@@ -198,7 +198,7 @@ Regle* Supprmier_proposition(Regle* regle,char* proposition)
             {
                 if (strcmp(temp->premisse,proposition) != 0)
                 {
-                    newel_r= Ajout_propostion_regle(newel_r,temp->premisse);
+                    newel_r= Ajout_proposition_regle(newel_r,temp->premisse);
                 }
                 temp=temp->next;
             }

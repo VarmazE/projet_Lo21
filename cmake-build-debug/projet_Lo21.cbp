@@ -85,6 +85,9 @@
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/headers/Moteur_inference.h">
 			<Option target="projet_Lo21"/>
 		</Unit>
+		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/headers/menu.h">
+			<Option target="projet_Lo21"/>
+		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/headers/regles.h">
 			<Option target="projet_Lo21"/>
 		</Unit>
@@ -98,6 +101,9 @@
 			<Option target="projet_Lo21"/>
 		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/sources/main.c">
+			<Option target="projet_Lo21"/>
+		</Unit>
+		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/sources/menu.c">
 			<Option target="projet_Lo21"/>
 		</Unit>
 		<Unit filename="C:/Users/evrim/CLionProjects/projet_Loo21/sources/regles.c">

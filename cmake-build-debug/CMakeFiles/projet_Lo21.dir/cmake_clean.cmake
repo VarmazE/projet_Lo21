@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/projet_Lo21.dir/sources/Moteur_inference.c.obj.d"
   "CMakeFiles/projet_Lo21.dir/sources/main.c.obj"
   "CMakeFiles/projet_Lo21.dir/sources/main.c.obj.d"
+  "CMakeFiles/projet_Lo21.dir/sources/menu.c.obj"
+  "CMakeFiles/projet_Lo21.dir/sources/menu.c.obj.d"
   "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj"
   "CMakeFiles/projet_Lo21.dir/sources/regles.c.obj.d"
   "libprojet_Lo21.dll.a"
